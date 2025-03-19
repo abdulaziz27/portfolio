@@ -1,387 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Aziz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Aziz</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
 
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Abdul Aziz.</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Abdul Aziz.</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Abdul Aziz's profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I am</p>
-      <h1 class="title">Abdul Aziz</h1>
-      <p class="section__text__p2">Web Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-abdul-aziz.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/itsabdulaziz/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/abdulaziz27'" />
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-me-2.png" alt="Abdul Aziz's About picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <!-- <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
-          </div> -->
-          <div class="details-container">
-            <img src="./assets/icon-education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>SMK Madinatulquran (2018-2021) - Software Engineering<br />
-              Institut Teknologi Telkom Purwokerto (2021-2024) - Informatics Engineering</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            A fInal year informatics engineering student from Telkom Purwokerto with a robust background in web development. Eager to leverage skills in software development to contribute effectively in a full-stack developer internship role, while remaining open to opportunities in other positions.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experiences</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Web Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Laravel</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MySQL</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>NodeJs</h3>
-                <p>Beginner</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>ReactJs</h3>
-                <p>Beginner</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Beginner</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Firebase   </h3>
-                <p>Beginner  </p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Mobile Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Kotlin</h3>
-                <p>Beginner </p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>FLutter </h3>
-                <p>Beginner </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Latest</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-mbatik.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">MBatik App</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/app_mbatik'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/app_mbatik'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-insightmate.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">InSightMate App</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/InsightMate'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/InsightMate'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-digicourse.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Digicourse Web</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/digicourse'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/digicourse'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-4.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">SiMaggot Web</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/siMaggot-website'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://simaggot.et.r.appspot.com/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-albeline.png" alt="Albeline Web" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Albeline Web</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/albeline-web'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://albeline.vercel.app/'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-banyumas farm fresh.png" alt="Banyumas Farm Fresh Web" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Banyumas Farm Fresh Web</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/banyumas-farm-fresh'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/banyumas-farm-fresh'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-date fruit classification.png" alt="Albeline Web" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Comparison of MobileNetV2 and ResNet50 Architectures in Date Fruit Classification</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/datefruit_classification'">
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-product recommendation.png" alt="Albeline Web" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Analysis Behavior: Product Recommendation with Support Vector Machines</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/abdulaziz27/product_recommendation'">
-              Github
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certificates'" />
-  </section>
-  <section id="certificates">
-    <p class="section__text__p1">Check Out My</p>
-    <h1 class="title">Certificates</h1>
-    <div class="certificates-container">
-      <div class="certificate">
-        <img src="./assets/sertifikat-bangkit.png" alt="Certificate Bangkit" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-inhack.jpg" alt="Certificate Inhack 2023" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-androintermediate.png" alt="Certificate 1" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-androfundamental.png" alt="Certificate 2" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-androfundamental.png" alt="Certificate 3" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-jetpack.png" alt="Certificate 4" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-dart.png" alt="Certificate 5" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-python.png" alt="Certificate 6" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-git.png" alt="Certificate Git and Github" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-solid.png" alt="Certificate SOLID" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-visualisasidata.png" alt="Certificate Data Visualisasi" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-comptia.png" alt="Certificate Comptia" onclick="showModal(this.src)" />
-      </div>
-      <div class="certificate">
-        <img src="./assets/sertifikat-toeic.png" alt="Certificate TOEIC" onclick="showModal(this.src)" />
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  
-  <!-- Modal -->
-  <div id="certificateModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImg">
-    <div id="caption"></div>
-  </div>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:itsdulziz@gmail.com">itsdulziz@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/itsabdulaziz/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Abdul Aziz.</div>
+      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -391,8 +27,1043 @@
         </ul>
       </div>
     </nav>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    <nav id="hamburger-nav">
+      <div class="logo">Abdul Aziz.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li>
+            <a href="#certificates" onclick="toggleMenu()">Certificates</a>
+          </li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Abdul Aziz's profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Abdul Aziz</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-abdul-aziz.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/itsabdulaziz/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/abdulaziz27'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-me-2.png"
+            alt="Abdul Aziz's About picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Frontend Development</p>
+          </div> -->
+            <div class="details-container">
+              <img
+                src="./assets/icon-education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                SMK Madinatulquran (2018-2021) - Software Engineering<br />
+                Institut Teknologi Telkom Purwokerto (2021-2024) - Informatics
+                Engineering
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A fInal year informatics engineering student from Telkom
+              Purwokerto with a robust background in web development. Eager to
+              leverage skills in software development to contribute effectively
+              in a full-stack developer internship role, while remaining open to
+              opportunities in other positions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
 
+    <!--  Tech Stacks Section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore</p>
+      <h1 class="title">Tech Stack That I Use</h1>
+
+      <div class="tech-stack-container">
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-php-plain colored"></i>
+            <h3>PHP</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-laravel-plain colored"></i>
+            <h3>Laravel</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <h3>TailwindCSS</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-nodejs-plain colored"></i>
+            <h3>NodeJS</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-express-original colored"></i>
+            <h3>Express</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-go-original-wordmark colored"></i>
+            <h3>Golang</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-react-original colored"></i>
+            <h3>ReactJS</h3>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-kotlin-plain colored"></i>
+            <h3>Kotlin</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-flutter-plain colored"></i>
+            <h3>Flutter</h3>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-mysql-plain colored"></i>
+            <h3>MySQL</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-mongodb-plain colored"></i>
+            <h3>MongoDB</h3>
+          </div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon-container">
+            <i class="devicon-firebase-plain colored"></i>
+            <h3>Firebase</h3>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Latest</p>
+      <h1 class="title">Projects</h1>
+
+      <!-- Filter Buttons -->
+      <div class="project-filter">
+        <button class="project-filter-btn active" data-filter="all">All</button>
+        <button class="project-filter-btn" data-filter="web">Web</button>
+        <button class="project-filter-btn" data-filter="mobile">Mobile</button>
+        <button class="project-filter-btn" data-filter="ml">ML</button>
+        <button class="project-filter-btn" data-filter="api">API</button>
+      </div>
+
+      <div class="experience-details-container">
+        <div class="projects-container">
+          <!-- Project 1: MBatik App -->
+          <div class="project-card" data-categories="mobile,ml">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-mbatik.png"
+                alt="MBatik App"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    A mobile application for batik pattern recognition using
+                    machine learning
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/app_mbatik"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/abdulaziz27/app_mbatik"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">MBatik App</h2>
+              <div class="project-tags">
+                <span class="project-tag mobile-tag">Flutter</span>
+                <span class="project-tag ml-tag">TensorFlow</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Lead Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: InSightMate App -->
+          <div class="project-card" data-categories="mobile,ml">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-insightmate.png"
+                alt="InSightMate App"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    An assistive mobile application using computer vision to
+                    help visually impaired users
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/InsightMate"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/abdulaziz27/InsightMate"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">InSightMate App</h2>
+              <div class="project-tags">
+                <span class="project-tag mobile-tag">Kotlin</span>
+                <span class="project-tag ml-tag">ML Kit</span>
+                <span class="project-tag">Android</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Team Lead (Bangkit Capstone)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Digicourse Web -->
+          <div class="project-card" data-categories="web,api">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-digicourse.png"
+                alt="Digicourse Web"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    An online learning platform with course management and
+                    interactive lessons
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/digicourse"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/abdulaziz27/digicourse"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Digicourse Web</h2>
+              <div class="project-tags">
+                <span class="project-tag web-tag">Laravel</span>
+                <span class="project-tag api-tag">REST API</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Full-Stack Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SiMaggot Web -->
+          <div class="project-card" data-categories="web,api">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-4.png"
+                alt="SiMaggot Web"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    A web application for maggot farming management and
+                    monitoring
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/siMaggot-website"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://simaggot.et.r.appspot.com/"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">SiMaggot Web</h2>
+              <div class="project-tags">
+                <span class="project-tag web-tag">PHP</span>
+                <span class="project-tag">Bootstrap</span>
+                <span class="project-tag api-tag">GCP</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Backend Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Albeline Web -->
+          <div class="project-card" data-categories="web">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-albeline.png"
+                alt="Albeline Web"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    A modern e-commerce website with product catalog and
+                    shopping cart features
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/albeline-web"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://albeline.vercel.app/"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Albeline Web</h2>
+              <div class="project-tags">
+                <span class="project-tag web-tag">React</span>
+                <span class="project-tag">TailwindCSS</span>
+                <span class="project-tag">Vercel</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Frontend Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Banyumas Farm Fresh Web -->
+          <div class="project-card" data-categories="web,api">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-banyumas farm fresh.png"
+                alt="Banyumas Farm Fresh Web"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    A marketplace connecting local farmers with consumers for
+                    fresh agricultural products
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/banyumas-farm-fresh"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/abdulaziz27/banyumas-farm-fresh"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Banyumas Farm Fresh Web</h2>
+              <div class="project-tags">
+                <span class="project-tag web-tag">Laravel</span>
+                <span class="project-tag api-tag">REST API</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Backend Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Date Fruit Classification -->
+          <div class="project-card" data-categories="ml">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-date fruit classification.png"
+                alt="Date Fruit Classification"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Comparison study of MobileNetV2 and ResNet50 architectures
+                    for date fruit variety classification
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/datefruit_classification"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Date Fruit Classification</h2>
+              <div class="project-tags">
+                <span class="project-tag ml-tag">TensorFlow</span>
+                <span class="project-tag ml-tag">Python</span>
+                <span class="project-tag ml-tag">Computer Vision</span>
+              </div>
+              <div class="project-role">
+                <span>Role: ML Researcher</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Product Recommendation -->
+          <div class="project-card" data-categories="ml,api">
+            <div class="project-img-container">
+              <img
+                src="./assets/project-product recommendation.png"
+                alt="Product Recommendation"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Analysis of user behavior patterns to build a product
+                    recommendation system using SVM
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/product_recommendation"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Product Recommendation</h2>
+              <div class="project-tags">
+                <span class="project-tag ml-tag">scikit-learn</span>
+                <span class="project-tag ml-tag">Python</span>
+                <span class="project-tag api-tag">Flask API</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Data Scientist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certificates'"
+      />
+    </section>
+
+    <!-- Start: Certificates Section -->
+    <section id="certificates">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Certificates</h1>
+
+      <!-- Filter Buttons -->
+      <div class="certificate-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+        <button class="filter-btn" data-filter="others">Others</button>
+      </div>
+
+      <div class="certificates-container">
+        <!-- Certificate 1 -->
+        <div class="certificate-card" data-category="ml">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-bangkit.png"
+              alt="Bangkit Academy Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag ml-tag">ML</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://bangkit.academy"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Bangkit Academy 2023</h3>
+          <div class="certificate-desc">
+            <p>
+              Google's Bangkit Academy program focusing on Machine Learning path
+              with comprehensive training on TensorFlow and data science.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-card" data-category="others">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-inhack.jpg"
+              alt="InHack 2023 Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag competition-tag">Competition</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="#"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">InHack 2023</h3>
+          <div class="certificate-desc">
+            <p>
+              InHack 2023 hackathon competition achievement for innovative
+              solution in technology sector.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-card" data-category="mobile">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-androintermediate.png"
+              alt="Android Intermediate Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag mobile-tag">Mobile</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Android Intermediate</h3>
+          <div class="certificate-desc">
+            <p>
+              Advanced Android development concepts including API integration,
+              complex UI, animation, and location-based services.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 4 -->
+        <div class="certificate-card" data-category="mobile">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-androfundamental.png"
+              alt="Android Fundamental Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag mobile-tag">Mobile</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Android Fundamental</h3>
+          <div class="certificate-desc">
+            <p>
+              Core Android development concepts including activities, fragments,
+              UI components, and navigation principles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 5 -->
+        <div class="certificate-card" data-category="mobile">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-jetpack.png"
+              alt="Jetpack Compose Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag mobile-tag">Mobile</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Jetpack Compose</h3>
+          <div class="certificate-desc">
+            <p>
+              Modern Android UI development with Jetpack Compose framework for
+              building native UI with less code.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 6 -->
+        <div class="certificate-card" data-category="mobile">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-dart.png"
+              alt="Dart Programming Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag mobile-tag">Mobile</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Dart Programming</h3>
+          <div class="certificate-desc">
+            <p>
+              Dart programming language fundamentals, the foundation for Flutter
+              cross-platform mobile development.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 7 -->
+        <div class="certificate-card" data-category="ml">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-python.png"
+              alt="Python Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag ml-tag">ML</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Python Programming</h3>
+          <div class="certificate-desc">
+            <p>
+              Python programming for data science, statistical analysis, and
+              machine learning applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 8 -->
+        <div class="certificate-card" data-category="others">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-git.png"
+              alt="Git and GitHub Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag others-tag">Others</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Git and GitHub</h3>
+          <div class="certificate-desc">
+            <p>
+              Git and GitHub for version control, collaboration, and workflow
+              management in software development.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 9 -->
+        <div class="certificate-card" data-category="others">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-solid.png"
+              alt="SOLID Principles Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag others-tag">Others</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">SOLID Principles</h3>
+          <div class="certificate-desc">
+            <p>
+              SOLID principles for clean, maintainable object-oriented software
+              design and architecture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 10 -->
+        <div class="certificate-card" data-category="ml">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-visualisasidata.png"
+              alt="Data Visualization Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag ml-tag">ML</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://dicoding.com"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">Data Visualization</h3>
+          <div class="certificate-desc">
+            <p>
+              Data visualization techniques and tools for effective data
+              presentation and insights communication.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 11 -->
+        <div class="certificate-card" data-category="others">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-comptia.png"
+              alt="CompTIA Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag security-tag">Security</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://comptia.org"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">CompTIA Certification</h3>
+          <div class="certificate-desc">
+            <p>
+              CompTIA certification for IT security, network management, and
+              cybersecurity professionals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate 12 -->
+        <div class="certificate-card" data-category="others">
+          <div class="certificate-image">
+            <img
+              src="./assets/sertifikat-toeic.png"
+              alt="TOEIC Certificate"
+              loading="lazy"
+            />
+            <span class="certificate-tag competence-tag">Competence</span>
+            <div class="certificate-actions">
+              <button class="view-cert-btn" title="View Certificate">
+                <i class="fas fa-eye"></i>
+              </button>
+              <a
+                href="https://ets.org/toeic"
+                target="_blank"
+                class="verify-btn"
+                title="Verify Certificate"
+              >
+                <i class="fas fa-certificate"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="certificate-title">TOEIC Examination</h3>
+          <div class="certificate-desc">
+            <p>
+              Test of English for International Communication certification
+              demonstrating English language proficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-- End: Certificates Section -->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:itsdulziz@gmail.com">itsabdulaziz3@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/itsabdulaziz/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
