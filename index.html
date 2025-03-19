@@ -20,7 +20,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#journey">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certificates">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -37,7 +37,8 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#journey" onclick="toggleMenu()">Journey</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Tech Stack</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li>
             <a href="#certificates" onclick="toggleMenu()">Certificates</a>
@@ -56,7 +57,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I am</p>
         <h1 class="title">Abdul Aziz</h1>
-        <p class="section__text__p2">Web Developer</p>
+        <p class="section__text__p2">Backend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -84,6 +85,8 @@
         </div>
       </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -97,36 +100,270 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <!-- <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
-          </div> -->
             <div class="details-container">
-              <img
-                src="./assets/icon-education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                SMK Madinatulquran (2018-2021) - Software Engineering<br />
-                Institut Teknologi Telkom Purwokerto (2021-2024) - Informatics
-                Engineering
-              </p>
+              <i class="fas fa-code icon-large"></i>
+              <h3>Backend Developer</h3>
+              <p>Building scalable APIs and secure backend systems</p>
+            </div>
+            <div class="details-container">
+              <i class="fas fa-lightbulb icon-large"></i>
+              <h3>Interests</h3>
+              <p>Web Dev • Machine Learning</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              A fInal year informatics engineering student from Telkom
-              Purwokerto with a robust background in web development. Eager to
-              leverage skills in software development to contribute effectively
-              in a full-stack developer internship role, while remaining open to
-              opportunities in other positions.
+              I'm a final-year Informatics Engineering student focused on
+              backend development and machine learning. With professional
+              experience at PT. Magercoding, I've delivered e-commerce platforms
+              and inventory systems for enterprise clients using Laravel.
+            </p>
+            <br />
+            <p>
+              My core strengths lie in designing efficient APIs, optimizing
+              database performance, and implementing secure backend systems.
+              Currently expanding my expertise in Golang while applying machine
+              learning concepts from Google's Bangkit Academy to create
+              intelligent backend solutions.
             </p>
           </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#journey'"
+      />
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey">
+      <p class="section__text__p1">My Journey</p>
+      <h1 class="title">Education & Experience</h1>
+
+      <!-- Timeline Filter -->
+      <div class="timeline-filter">
+        <button class="timeline-filter-btn active" data-filter="all">
+          All
+        </button>
+        <button class="timeline-filter-btn" data-filter="education">
+          Education
+        </button>
+        <button class="timeline-filter-btn" data-filter="work">Work</button>
+        <button class="timeline-filter-btn" data-filter="bootcamp">
+          Bootcamp
+        </button>
+        <button class="timeline-filter-btn" data-filter="internship">
+          Internship
+        </button>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="timeline-container">
+        <!-- Timeline Center Line -->
+        <div class="timeline-line"></div>
+
+        <!-- Timeline Items - Ordered by recency (most recent first based on start date) -->
+
+        <!-- 1. Most recent: Work at PT. Magercoding (started July 2024) -->
+        <div class="timeline-item right" data-category="work">
+          <div class="timeline-icon work">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jul 2024 - Feb 2025 · 8 months</div>
+            <h3 class="timeline-title">Backend Developer</h3>
+            <h4 class="timeline-organization">
+              PT. Magercoding Digital Indonesia
+            </h4>
+            <p class="timeline-summary">
+              Working as a project-based developer delivering solutions for
+              enterprise clients.
+            </p>
+            <button class="timeline-expand-btn">Read More</button>
+            <div class="timeline-details">
+              <p>Developed corporate website magercoding.com</p>
+              <p>
+                Built Web Inventory and REST API POS for Franchise Seblak
+                Sulthane
+              </p>
+              <p>Created e-commerce platform batikgumelem.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Machine Learning Bootcamp (started August 2024) -->
+        <div class="timeline-item left" data-category="bootcamp">
+          <div class="timeline-icon bootcamp">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2024 - Dec 2024 · 5 months</div>
+            <h3 class="timeline-title">Machine Learning Path</h3>
+            <h4 class="timeline-organization">
+              Bangkit Academy by Google, Tokopedia, Gojek, & Traveloka
+            </h4>
+            <p class="timeline-summary">
+              Completed intensive machine learning training with TensorFlow and
+              developed AI applications.
+            </p>
+            <button class="timeline-expand-btn">Read More</button>
+            <div class="timeline-details">
+              <p>Completed 900+ hours of learning</p>
+              <p>
+                Comprehensive training in Computer Vision, NLP, and Generative
+                AI
+              </p>
+              <p>
+                Developed skills in image classification, object detection, and
+                deep learning models
+              </p>
+              <p>
+                <strong>Capstone Project:</strong> Image Recognition Application
+                for Indonesian Batik
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Mobile Development Bootcamp (started August 2023) -->
+        <div class="timeline-item right" data-category="bootcamp">
+          <div class="timeline-icon bootcamp">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2023 - Dec 2023 · 5 months</div>
+            <h3 class="timeline-title">Mobile Development Cohort</h3>
+            <h4 class="timeline-organization">
+              Bangkit Academy by Google, Tokopedia, Gojek, & Traveloka
+            </h4>
+            <p class="timeline-summary">
+              Developed Android applications using Kotlin, MVVM architecture,
+              and modern UI components while learning industry best practices
+              for mobile development.
+            </p>
+            <button class="timeline-expand-btn">Read More</button>
+            <div class="timeline-details">
+              <p>
+                Completed courses in Kotlin Android fundamentals and
+                intermediate development
+              </p>
+              <p>Learned UI development with Jetpack Compose</p>
+              <p>
+                Gained experience in RESTful API integration for mobile
+                applications
+              </p>
+              <p>
+                Developed soft skills through team collaboration and project
+                management
+              </p>
+              <p>
+                <strong>Capstone Project:</strong> Built InSightMate application
+                for visually impaired users with banknote detection and
+                image-to-text features
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Current Education (started 2021) -->
+        <div class="timeline-item left" data-category="education">
+          <div class="timeline-icon education">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">2021 - Present</div>
+            <h3 class="timeline-title">Informatics Engineering</h3>
+            <h4 class="timeline-organization">Telkom University Purwokerto</h4>
+            <p class="timeline-summary">
+              Studying advanced software engineering concepts, data structures,
+              algorithms, and working on final year research project.
+            </p>
+            <button class="timeline-expand-btn">Read More</button>
+            <div class="timeline-details">
+              <p>
+                Notable courses: Advanced Algorithms, Database Systems, Web
+                Development, Mobile App Development, Artificial Intelligence,
+                and Machine Learning
+              </p>
+              <p>GPA: 3.85/4.0</p>
+              <p>
+                Thesis: "Development of Batik Gumelem Website Using Rapid
+                Application Development Method"
+              </p>
+              <p>
+                <strong>Publications:</strong> Comparison of MobileNetV2 and
+                ResNet50 Architectures for Date Fruit Classification by Type -
+                JUSTIN (Jurnal Sistem dan Teknologi Informasi)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Internship (started December 2020) -->
+        <div class="timeline-item right" data-category="internship">
+          <div class="timeline-icon internship">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2020 - Mar 2021 · 4 months</div>
+            <h3 class="timeline-title">Intern Odoo Developer</h3>
+            <h4 class="timeline-organization">
+              PT. Ismata Nusantara Abadi, Bekasi
+            </h4>
+            <p class="timeline-summary">
+              Gained practical experience with Odoo development for business
+              applications during second year of SMK.
+            </p>
+            <button class="timeline-expand-btn">Read More</button>
+            <div class="timeline-details">
+              <p>
+                Completed HTML, CSS, and Python courses on codesaya.com and
+                codecademy.com to enhance technical skills
+              </p>
+              <p>
+                Developed web-based applications using Odoo for laundry
+                services, Odoo training, and library management as training
+                projects
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. SMK Education (started 2018) -->
+        <div class="timeline-item left" data-category="education">
+          <div class="timeline-icon education">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">2018 - 2021 · 3 years</div>
+            <h3 class="timeline-title">Software Engineering</h3>
+            <h4 class="timeline-organization">SMK Madinatulquran</h4>
+            <p class="timeline-summary">
+              Completed vocational high school with a focus on web and mobile
+              development.
+            </p>
+            <button class="timeline-expand-btn">Read More</button>
+            <div class="timeline-details">
+              <p>
+                Web Development: HTML, CSS, Bootstrap, JavaScript, PHP, Laravel,
+                and ReactJS
+              </p>
+              <p>Mobile Development: Flutter for cross-platform applications</p>
+              <p>
+                Participated in school programming competitions (LKS
+                Competition)
+              </p>
+              <p>
+                <strong>Final Project:</strong> Developed "Albeline," an
+                e-commerce marketplace website as graduation requirement
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -252,8 +489,158 @@
 
       <div class="experience-details-container">
         <div class="projects-container">
-          <!-- Project 1: MBatik App -->
+          <!-- Project 1: Batikgumelem.com -->
+          <div class="project-card" data-categories="web">
+            <!-- Badge shows primary category -->
+            <div class="project-badge web">Web</div>
+            <div class="project-img-container">
+              <img
+                src="./assets/project-digicourse.png"
+                alt="Batikgumelem.com"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    E-commerce platform for Gumelem Batik products, showcasing
+                    traditional Indonesian batik with an integrated shopping
+                    experience and cultural education.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/batikgumelem-web"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://batikgumelem.com"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Batikgumelem.com</h2>
+              <div class="project-tags">
+                <span class="project-tag api-tag">Laravel</span>
+                <span class="project-tag web-tag">TailwindCSS</span>
+                <span class="project-tag web-tag">Filament</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Full-Stack Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Franchise Seblak Sulthane -->
+          <div class="project-card" data-categories="web,api">
+            <div class="project-badge web">Web</div>
+            <div class="project-img-container">
+              <img
+                src="./assets/project-digicourse.png"
+                alt="Seblak Sulthane"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Complete franchise management solution for Seblak Sulthane
+                    with web-based administration panel and mobile POS for
+                    efficient franchise operations.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <!-- <a
+                    href="https://github.com/abdulaziz27/digicourse"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a> -->
+                  <a
+                    href="https://api.seblaksulthane.com"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">
+                Web and POS Franchise Seblak Sulthane
+              </h2>
+              <div class="project-tags">
+                <span class="project-tag api-tag">Laravel</span>
+                <span class="project-tag web-tag">TailwindCSS</span>
+                <span class="project-tag mobile-tag">Flutter</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Backend Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Magercoding Website -->
+          <div class="project-card" data-categories="web">
+            <div class="project-badge web">Web</div>
+            <div class="project-img-container">
+              <img
+                src="./assets/project-albeline.png"
+                alt="PT Magercoding"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Professional corporate website for PT. Magercoding Digital
+                    Indonesia, showcasing company services, portfolio, and team
+                    members with a modern design.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <!-- <a
+                    href="https://github.com/abdulaziz27/albeline-web"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a> -->
+                  <a
+                    href="https://magercoding.com"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">
+                PT. Magercoding Digital Indonesia Web
+              </h2>
+              <div class="project-tags">
+                <span class="project-tag web-tag">Wordpress</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Wordpress Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: MBatik App -->
           <div class="project-card" data-categories="mobile,ml">
+            <div class="project-badge mobile">Mobile</div>
             <div class="project-img-container">
               <img
                 src="./assets/project-mbatik.png"
@@ -264,7 +651,8 @@
                 <div class="project-description">
                   <p>
                     A mobile application for batik pattern recognition using
-                    machine learning
+                    machine learning, helping users identify traditional
+                    Indonesian batik patterns through image analysis.
                   </p>
                 </div>
                 <div class="project-actions">
@@ -289,40 +677,85 @@
               <h2 class="project-title">MBatik App</h2>
               <div class="project-tags">
                 <span class="project-tag mobile-tag">Flutter</span>
-                <span class="project-tag ml-tag">TensorFlow</span>
+                <span class="project-tag web-tag">Laravel</span>
+                <span class="project-tag">Rest API</span>
                 <span class="project-tag">Firebase</span>
               </div>
               <div class="project-role">
-                <span>Role: Lead Developer</span>
+                <span>Role: Full-Stack Developer</span>
               </div>
             </div>
           </div>
 
-          <!-- Project 2: InSightMate App -->
-          <div class="project-card" data-categories="mobile,ml">
+          <!-- Project 5: Batik Classification -->
+          <div class="project-card" data-categories="ml">
+            <div class="project-badge ml">ML</div>
             <div class="project-img-container">
               <img
-                src="./assets/project-insightmate.png"
-                alt="InSightMate App"
+                src="./assets/project-date fruit classification.png"
+                alt="Batik Classification"
                 class="project-img"
               />
               <div class="project-overlay">
                 <div class="project-description">
                   <p>
-                    An assistive mobile application using computer vision to
-                    help visually impaired users
+                    Deep learning model for automatic classification of
+                    Indonesian batik patterns, using convolutional neural
+                    networks to identify and categorize traditional motifs.
                   </p>
                 </div>
                 <div class="project-actions">
                   <a
-                    href="https://github.com/abdulaziz27/InsightMate"
+                    href="https://github.com/abdulaziz27/datefruit_classification"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Batik Classification</h2>
+              <div class="project-tags">
+                <span class="project-tag ml-tag">TensorFlow</span>
+                <span class="project-tag ml-tag">Python</span>
+                <span class="project-tag ml-tag">CNN</span>
+                <span class="project-tag">image classification</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Machine Learning Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Date Fruit Classification -->
+          <div class="project-card" data-categories="ml">
+            <div class="project-badge ml">ML</div>
+            <div class="project-img-container">
+              <img
+                src="./assets/project-date fruit classification.png"
+                alt="Date Fruit Classification"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Comparison study of MobileNetV2 and ResNet50 architectures
+                    for date fruit variety classification, evaluating
+                    performance metrics and classification accuracy.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/datefruit_classification"
                     target="_blank"
                     class="project-action-btn github-btn"
                   >
                     <i class="fab fa-github"></i>
                   </a>
                   <a
-                    href="https://github.com/abdulaziz27/InsightMate"
+                    href="https://jurnal.untan.ac.id/index.php/justin/article/view/80358"
                     target="_blank"
                     class="project-action-btn demo-btn"
                   >
@@ -332,20 +765,63 @@
               </div>
             </div>
             <div class="project-info">
-              <h2 class="project-title">InSightMate App</h2>
+              <h2 class="project-title">Date Fruit Classification</h2>
               <div class="project-tags">
-                <span class="project-tag mobile-tag">Kotlin</span>
-                <span class="project-tag ml-tag">ML Kit</span>
-                <span class="project-tag">Android</span>
+                <span class="project-tag ml-tag">TensorFlow</span>
+                <span class="project-tag ml-tag">Python</span>
+                <span class="project-tag ml-tag">CNN</span>
+                <span class="project-tag">image classification</span>
               </div>
               <div class="project-role">
-                <span>Role: Team Lead (Bangkit Capstone)</span>
+                <span>Role: Machine Learning Developer</span>
               </div>
             </div>
           </div>
 
-          <!-- Project 3: Digicourse Web -->
-          <div class="project-card" data-categories="web,api">
+          <!-- Project 7: Product Recommendation -->
+          <div class="project-card" data-categories="ml">
+            <div class="project-badge ml">ML</div>
+            <div class="project-img-container">
+              <img
+                src="./assets/project-product recommendation.png"
+                alt="Product Recommendation"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Machine learning-based recommendation system analyzing user
+                    behavior patterns to suggest relevant products, improving
+                    customer experience and conversion rates.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/product_recommendation"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Product Recommendation</h2>
+              <div class="project-tags">
+                <span class="project-tag ml-tag">scikit-learn</span>
+                <span class="project-tag ml-tag">Python</span>
+                <span class="project-tag ml-tag">SVM</span>
+              </div>
+              <div class="project-role">
+                <span>Role: AI Engineer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Digicourse Web -->
+          <div class="project-card" data-categories="web">
+            <div class="project-badge web">Web</div>
             <div class="project-img-container">
               <img
                 src="./assets/project-digicourse.png"
@@ -355,8 +831,9 @@
               <div class="project-overlay">
                 <div class="project-description">
                   <p>
-                    An online learning platform with course management and
-                    interactive lessons
+                    Comprehensive online learning platform with course
+                    management, interactive lessons, student progress tracking,
+                    and integrated assessment tools.
                   </p>
                 </div>
                 <div class="project-actions">
@@ -381,7 +858,7 @@
               <h2 class="project-title">Digicourse Web</h2>
               <div class="project-tags">
                 <span class="project-tag web-tag">Laravel</span>
-                <span class="project-tag api-tag">REST API</span>
+                <span class="project-tag web-tag">TailwindCSS</span>
                 <span class="project-tag">MySQL</span>
               </div>
               <div class="project-role">
@@ -390,8 +867,58 @@
             </div>
           </div>
 
-          <!-- Project 4: SiMaggot Web -->
+          <!-- Project 9: InSightMate App -->
+          <div class="project-card" data-categories="mobile,ml">
+            <div class="project-badge mobile">Mobile</div>
+            <div class="project-img-container">
+              <img
+                src="./assets/project-insightmate.png"
+                alt="InSightMate App"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Assistive mobile application using computer vision and AI to
+                    help visually impaired users navigate their surroundings,
+                    identify objects, and read text.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/InsightMate"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://github.com/abdulaziz27/InsightMate"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">InSightMate App</h2>
+              <div class="project-tags">
+                <span class="project-tag mobile-tag">Flutter</span>
+                <span class="project-tag ml-tag">TensorFlow</span>
+                <span class="project-tag">Rest API</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <div class="project-role">
+                <span>Role: Mobile Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10: SiMaggot Web -->
           <div class="project-card" data-categories="web,api">
+            <div class="project-badge web">Web</div>
             <div class="project-img-container">
               <img
                 src="./assets/project-4.png"
@@ -401,8 +928,9 @@
               <div class="project-overlay">
                 <div class="project-description">
                   <p>
-                    A web application for maggot farming management and
-                    monitoring
+                    Comprehensive web application for maggot farming management
+                    and monitoring, featuring inventory tracking, growth data
+                    analysis, and real-time environmental monitoring.
                   </p>
                 </div>
                 <div class="project-actions">
@@ -426,8 +954,11 @@
             <div class="project-info">
               <h2 class="project-title">SiMaggot Web</h2>
               <div class="project-tags">
-                <span class="project-tag web-tag">PHP</span>
-                <span class="project-tag">Bootstrap</span>
+                <span class="project-tag api-tag">ExpressJS</span>
+                <span class="project-tag web-tag">ReactJS</span>
+                <span class="project-tag web-tag">NodeJS</span>
+                <span class="project-tag api-tag">MongoDB</span>
+                <span class="project-tag api-tag">Rest API</span>
                 <span class="project-tag api-tag">GCP</span>
               </div>
               <div class="project-role">
@@ -436,54 +967,9 @@
             </div>
           </div>
 
-          <!-- Project 5: Albeline Web -->
-          <div class="project-card" data-categories="web">
-            <div class="project-img-container">
-              <img
-                src="./assets/project-albeline.png"
-                alt="Albeline Web"
-                class="project-img"
-              />
-              <div class="project-overlay">
-                <div class="project-description">
-                  <p>
-                    A modern e-commerce website with product catalog and
-                    shopping cart features
-                  </p>
-                </div>
-                <div class="project-actions">
-                  <a
-                    href="https://github.com/abdulaziz27/albeline-web"
-                    target="_blank"
-                    class="project-action-btn github-btn"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://albeline.vercel.app/"
-                    target="_blank"
-                    class="project-action-btn demo-btn"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h2 class="project-title">Albeline Web</h2>
-              <div class="project-tags">
-                <span class="project-tag web-tag">React</span>
-                <span class="project-tag">TailwindCSS</span>
-                <span class="project-tag">Vercel</span>
-              </div>
-              <div class="project-role">
-                <span>Role: Frontend Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: Banyumas Farm Fresh Web -->
+          <!-- Project 11: Banyumas Farm Fresh Web -->
           <div class="project-card" data-categories="web,api">
+            <div class="project-badge web">Web</div>
             <div class="project-img-container">
               <img
                 src="./assets/project-banyumas farm fresh.png"
@@ -493,8 +979,9 @@
               <div class="project-overlay">
                 <div class="project-description">
                   <p>
-                    A marketplace connecting local farmers with consumers for
-                    fresh agricultural products
+                    Farm-to-consumer marketplace connecting local farmers with
+                    buyers, featuring product listings, order management,
+                    delivery tracking, and farmer verification system.
                   </p>
                 </div>
                 <div class="project-actions">
@@ -518,90 +1005,64 @@
             <div class="project-info">
               <h2 class="project-title">Banyumas Farm Fresh Web</h2>
               <div class="project-tags">
-                <span class="project-tag web-tag">Laravel</span>
+                <span class="project-tag web-tag">NodeJS</span>
+                <span class="project-tag web-tag">Express</span>
+                <span class="project-tag web-tag">ReactJS</span>
                 <span class="project-tag api-tag">REST API</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
+              <div class="project-role">
+                <span>Role: PM, Frontend Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 11: Albeline Web -->
+          <div class="project-card" data-categories="web,api">
+            <div class="project-badge web">Web</div>
+            <div class="project-img-container">
+              <img
+                src="./assets/project-albeline.png"
+                alt="Albeline Web"
+                class="project-img"
+              />
+              <div class="project-overlay">
+                <div class="project-description">
+                  <p>
+                    Modern e-commerce platform with comprehensive product
+                    catalog, shopping cart functionality, user account
+                    management, and secure payment integration.
+                  </p>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/abdulaziz27/albeline-web"
+                    target="_blank"
+                    class="project-action-btn github-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://albeline.vercel.app/"
+                    target="_blank"
+                    class="project-action-btn demo-btn"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Albeline Web</h2>
+              <div class="project-tags">
+                <span class="project-tag web-tag">ReactJS</span>
+                <span class="project-tag web-tag">TailwindCSS</span>
+                <span class="project-tag api-tag">Laravel</span>
+                <span class="project-tag api-tag">Rest API</span>
                 <span class="project-tag">MySQL</span>
               </div>
               <div class="project-role">
                 <span>Role: Backend Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 7: Date Fruit Classification -->
-          <div class="project-card" data-categories="ml">
-            <div class="project-img-container">
-              <img
-                src="./assets/project-date fruit classification.png"
-                alt="Date Fruit Classification"
-                class="project-img"
-              />
-              <div class="project-overlay">
-                <div class="project-description">
-                  <p>
-                    Comparison study of MobileNetV2 and ResNet50 architectures
-                    for date fruit variety classification
-                  </p>
-                </div>
-                <div class="project-actions">
-                  <a
-                    href="https://github.com/abdulaziz27/datefruit_classification"
-                    target="_blank"
-                    class="project-action-btn github-btn"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h2 class="project-title">Date Fruit Classification</h2>
-              <div class="project-tags">
-                <span class="project-tag ml-tag">TensorFlow</span>
-                <span class="project-tag ml-tag">Python</span>
-                <span class="project-tag ml-tag">Computer Vision</span>
-              </div>
-              <div class="project-role">
-                <span>Role: ML Researcher</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 8: Product Recommendation -->
-          <div class="project-card" data-categories="ml,api">
-            <div class="project-img-container">
-              <img
-                src="./assets/project-product recommendation.png"
-                alt="Product Recommendation"
-                class="project-img"
-              />
-              <div class="project-overlay">
-                <div class="project-description">
-                  <p>
-                    Analysis of user behavior patterns to build a product
-                    recommendation system using SVM
-                  </p>
-                </div>
-                <div class="project-actions">
-                  <a
-                    href="https://github.com/abdulaziz27/product_recommendation"
-                    target="_blank"
-                    class="project-action-btn github-btn"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h2 class="project-title">Product Recommendation</h2>
-              <div class="project-tags">
-                <span class="project-tag ml-tag">scikit-learn</span>
-                <span class="project-tag ml-tag">Python</span>
-                <span class="project-tag api-tag">Flask API</span>
-              </div>
-              <div class="project-role">
-                <span>Role: Data Scientist</span>
               </div>
             </div>
           </div>

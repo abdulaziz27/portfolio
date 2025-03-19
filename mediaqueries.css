@@ -1,92 +1,171 @@
-/* Media Queries for Project Section */
-@media screen and (max-width: 768px) {
+/* Responsive Layouts for All Screen Sizes */
+
+/* Large Screens (1400px and down) */
+@media screen and (max-width: 1400px) {
+  section,
+  #journey {
+    margin: 2.5rem 8rem;
+  }
+
+  #profile {
+    height: auto;
+    min-height: 80vh;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
   .projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media screen and (max-width: 480px) {
+/* Medium Screens (1200px and down) */
+@media screen and (max-width: 1200px) {
+  section,
+  #journey {
+    margin: 2rem 5%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
   .projects-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+}
+
+/* Tablets (768px and down) */
+@media screen and (max-width: 768px) {
+  section,
+  #journey {
+    margin: 1.5rem 3%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  /* About section improvements */
+  .about-details-container {
     padding: 0 1rem;
   }
 
-  .project-filter {
-    gap: 0.5rem;
+  .about-containers {
+    gap: 1rem;
   }
 
-  .project-filter-btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* Responsive Certificate Adjustments */
-@media screen and (max-width: 768px) {
-  .certificates-container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  .details-container {
+    padding: 1rem;
+    min-width: 100%;
   }
 
-  .modal-content {
-    max-width: 95%;
+  .text-container {
+    text-align: left;
+    padding: 0 0.5rem;
   }
 
-  .modal-controls {
-    padding: 0 20px;
+  .section__pic-container .about-pic {
+    max-width: 100%;
+    height: auto;
   }
 
-  .nav-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+  /* Timeline responsive adjustments - improved version */
+  .timeline-container {
+    margin: 2rem auto;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .cert-nav-btn {
+  .timeline-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 60px;
+    padding-right: 15px;
+    left: 0 !important;
+  }
+
+  .timeline-line {
+    left: 30px;
+  }
+
+  .timeline-icon {
+    left: 5px !important;
+    right: auto !important;
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
   }
 
-  .cert-close-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 2rem;
-    top: 15px;
-    right: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .cert-modal-img {
-    max-width: 95%;
+  .timeline-content {
+    padding: 1rem;
   }
 
-  .cert-nav-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .certificates-container {
-    grid-template-columns: 1fr;
+  .timeline-content:after {
+    left: -10px !important;
+    right: auto !important;
+    top: 20px;
   }
 
-  .certificate-filter {
-    gap: 0.5rem;
+  .timeline-filter {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
   }
 
-  .filter-btn {
+  .timeline-filter-btn {
+    flex-shrink: 0;
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
-}
 
-/* Start - Responsive Tech Stacks */
-@media screen and (max-width: 768px) {
+  /* Project Cards */
+  .projects-container {
+    gap: 1.2rem;
+  }
+
+  /* Certificate Cards */
+  .certificates-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Tech Stack */
   .tech-item {
     width: 130px;
   }
@@ -100,9 +179,144 @@
     font-size: 50px;
     margin-bottom: 10px;
   }
+
+  /* Certificate Viewer */
+  .cert-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .cert-close-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    top: 15px;
+    right: 15px;
+  }
+
+  .modal-content {
+    max-width: 95%;
+  }
+
+  .modal-controls {
+    padding: 0 20px;
+  }
+
+  /* Fix Hamburger Menu Navigation Links */
+  .menu-links {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 0.5rem 0;
+    width: 180px;
+  }
+
+  .menu-links a {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .menu-links li:last-child a {
+    border-bottom: none;
+  }
 }
 
+/* Mobile Devices (600px and down) */
+@media screen and (max-width: 600px) {
+  section,
+  #journey {
+    margin: 1rem 2%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  /* Project Cards */
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .project-filter {
+    gap: 0.5rem;
+  }
+
+  .project-filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Certificate Cards */
+  .certificates-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .certificate-filter {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Contact and Footer */
+  #contact,
+  footer {
+    height: auto;
+    min-height: 40vh;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  /* Navigation */
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /* Timeline improvements for small screens */
+  .timeline-title {
+    font-size: 1.3rem;
+  }
+
+  .timeline-organization {
+    font-size: 1.05rem;
+  }
+}
+
+/* Small Mobile Devices (480px and down) */
 @media screen and (max-width: 480px) {
+  /* Tech Stack */
   .tech-stack-container {
     gap: 1rem;
   }
@@ -124,132 +338,78 @@
   .tech-item h3 {
     font-size: 0.9rem;
   }
-}
-/* End - Responsive Tech Stacks */
 
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-
-  .about-containers {
-    flex-wrap: wrap;
-  }
-
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: flex;
-  }
-
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-
-  #profile,
-  .section-container {
-    display: block;
-  }
-
-  .arrow {
-    display: none;
-  }
-
-  section,
-  .section-container {
-    height: fit-content;
-  }
-
-  section {
-    margin: 0 5%;
-  }
-
+  /* Profile Section */
   .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 1.5rem;
   }
 
+  /* About section improvements for very small screens */
   .about-containers {
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+  .details-container h3 {
+    font-size: 1.1rem;
   }
 
-  article {
+  /* Journey timeline for very small screens */
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-organization {
     font-size: 1rem;
   }
 
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+  .timeline-content {
+    padding: 0.8rem;
   }
 
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
+  .timeline-date {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
   }
 
-  .contact-info-container {
-    margin: 0;
+  .timeline-item {
+    padding-left: 50px;
   }
 
-  .contact-info-container p,
-  .nav-links li a {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-icon {
+    left: 0 !important;
+    width: 35px;
+    height: 35px;
     font-size: 1rem;
   }
 
-  .experience-sub-title {
-    font-size: 1.25rem;
+  .timeline-expand-btn {
+    font-size: 0.8rem;
+    padding: 0.2rem 0;
   }
 
-  .logo {
-    font-size: 1.5rem;
+  /* Certificate Viewer */
+  .cert-modal-img {
+    max-width: 95%;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+  .cert-nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
 
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+  .cert-modal-controls {
+    padding: 0 15px;
   }
 
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .text-container {
-    text-align: justify;
+  .certificate-card:hover .certificate-desc {
+    max-height: 150px;
   }
 }

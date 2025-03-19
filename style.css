@@ -151,8 +151,8 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding-bottom: 4vh;
+  margin: 3rem 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -211,6 +211,13 @@ section {
 
 .icon {
   cursor: pointer;
+  height: 2rem;
+}
+
+.icon-large {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
   height: 2rem;
 }
 
@@ -316,6 +323,248 @@ section {
   margin: auto 0;
 }
 
+/* Timeline Section */
+#journey {
+  position: relative;
+  padding: 4vh 0;
+  margin: 3rem 10rem;
+}
+
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+
+/* Center Line */
+.timeline-line {
+  position: absolute;
+  width: 4px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 2px;
+}
+
+/* Timeline Filter */
+.timeline-filter {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timeline-filter-btn {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.timeline-filter-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.timeline-filter-btn.active {
+  background-color: #333;
+  color: white;
+}
+
+/* Timeline Items */
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.timeline-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+/* Timeline Content Box */
+.timeline-content {
+  position: relative;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Arrow Point */
+.timeline-content:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  transform: rotate(45deg);
+  top: 25px;
+}
+
+.left .timeline-content:after {
+  right: -10px;
+}
+
+.right .timeline-content:after {
+  left: -10px;
+}
+
+/* Timeline Icon */
+.timeline-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.left .timeline-icon {
+  right: -25px;
+}
+
+.right .timeline-icon {
+  left: -25px;
+}
+
+/* Category Icon Colors */
+.timeline-icon.education {
+  background-color: #2196f3;
+}
+
+.timeline-icon.work {
+  background-color: #9c27b0;
+}
+
+.timeline-icon.bootcamp {
+  background-color: #ff5722;
+}
+
+.timeline-icon.internship {
+  background-color: #4caf50;
+}
+
+/* Timeline Content Elements */
+.timeline-date {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-title {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.timeline-organization {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.timeline-summary {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.timeline-expand-btn {
+  background: none;
+  border: none;
+  color: #2196f3;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.timeline-expand-btn:hover {
+  color: #0d47a1;
+}
+
+.timeline-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  margin-top: 0.5rem;
+}
+
+.timeline-details.open {
+  max-height: 500px;
+}
+
+.timeline-details p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #journey {
+    margin: 0 1rem;
+  }
+
+  .timeline-line {
+    left: 40px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    left: 0;
+  }
+
+  .timeline-icon {
+    left: 15px;
+  }
+
+  .timeline-content:after {
+    left: -10px;
+  }
+}
+
 /* TECH STACK SECTION */
 
 .tech-stack-container {
@@ -408,7 +657,7 @@ article .icon {
 
 #projects {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 /* Project Filters */
@@ -439,12 +688,12 @@ article .icon {
   color: white;
 }
 
-/* Projects Container */
+/* Projects Container - Explicitly set to 3 columns on desktop */
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+  gap: 1.5rem; /* Slightly reduced gap to fit 3 cards comfortably */
+  padding: 0 1.5rem;
 }
 
 /* Project Card */
@@ -457,6 +706,7 @@ article .icon {
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative; /* For positioning the badge */
 }
 
 .project-card:hover {
@@ -468,7 +718,7 @@ article .icon {
 .project-img-container {
   position: relative;
   overflow: hidden;
-  height: 200px; /* Fixed height for consistent aspect ratio */
+  height: 220px; /* Slightly increased from original 200px */
 }
 
 .project-img {
@@ -480,6 +730,38 @@ article .icon {
 
 .project-card:hover .project-img {
   transform: scale(1.05);
+}
+
+/* Project Badge - Added */
+.project-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  z-index: 3; /* Above the overlay */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase; /* Make badge text uppercase */
+}
+
+/* Badge colors matching project tag colors */
+.project-badge.web {
+  background-color: #2196f3; /* Same as web-tag */
+}
+
+.project-badge.mobile {
+  background-color: #4caf50; /* Same as mobile-tag */
+}
+
+.project-badge.ml {
+  background-color: #ff5722; /* Same as ml-tag */
+}
+
+.project-badge.api {
+  background-color: #9c27b0; /* Same as api-tag */
 }
 
 /* Project Overlay (appears on hover) */
@@ -507,9 +789,14 @@ article .icon {
 .project-description {
   color: white;
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.5; /* Improved from 1.4 */
   overflow-y: auto;
-  max-height: 70%;
+  max-height: 75%; /* Increased from 70% */
+  padding-right: 5px;
+}
+
+.project-description p {
+  color: white;
 }
 
 /* Project Action Buttons */
@@ -541,10 +828,10 @@ article .icon {
 
 /* Project Info Section */
 .project-info {
-  padding: 1rem;
+  padding: 1.2rem; /* Increased from 1rem */
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem; /* Increased from 0.5rem */
   flex-grow: 1;
 }
 
@@ -595,12 +882,45 @@ article .icon {
   font-style: italic;
 }
 
+/* Media queries for project cards */
+@media screen and (max-width: 1200px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Keep 2 cards per row on small tablets */
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+    padding: 0 1rem;
+  }
+
+  .project-filter {
+    gap: 0.5rem;
+  }
+
+  .project-filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 /* CERTIFICATES SECTION */
 
 #certificates {
   position: relative;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .certificate-filter {
@@ -886,7 +1206,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 20rem;
+  margin-top: 3rem;
 }
 
 .contact-info-upper-container {

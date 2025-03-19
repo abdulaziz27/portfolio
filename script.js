@@ -176,8 +176,6 @@ function setupCertificateViewer() {
   });
 }
 
-// Project
-
 // Setup Projects Filtering
 function setupProjectsFilter() {
   const filterButtons = document.querySelectorAll(".project-filter-btn");
@@ -194,6 +192,22 @@ function setupProjectsFilter() {
         card.style.display = "none";
       }
     });
+
+    // Update badges to show the currently filtered category
+    // This is optional but adds a nice touch
+    if (category !== "all") {
+      projectCards.forEach((card) => {
+        const cardCategories = card.getAttribute("data-categories").split(",");
+        const badge = card.querySelector(".project-badge");
+
+        if (cardCategories.includes(category)) {
+          // Update badge to show filtered category
+          badge.textContent =
+            category.charAt(0).toUpperCase() + category.slice(1);
+          badge.className = "project-badge " + category;
+        }
+      });
+    }
   }
 
   // Add click listeners to filter buttons
@@ -214,3 +228,63 @@ function setupProjectsFilter() {
   // Initial filter to show all projects
   filterProjects("all");
 }
+
+// Timeline Animation and Interactivity
+function setupTimeline() {
+  const timelineItems = document.querySelectorAll(".timeline-item");
+  const filterButtons = document.querySelectorAll(".timeline-filter-btn");
+  const expandButtons = document.querySelectorAll(".timeline-expand-btn");
+
+  // Animate items when they come into view
+  function animateOnScroll() {
+    timelineItems.forEach((item) => {
+      const itemTop = item.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (itemTop < windowHeight * 0.8) {
+        item.classList.add("animate");
+      }
+    });
+  }
+
+  // Expand/collapse details
+  expandButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const details = this.nextElementSibling;
+      details.classList.toggle("open");
+      this.textContent = details.classList.contains("open")
+        ? "Read Less"
+        : "Read More";
+    });
+  });
+
+  // Filter timeline items
+  function filterTimeline(category) {
+    timelineItems.forEach((item) => {
+      if (category === "all" || item.dataset.category === category) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+      filterTimeline(this.dataset.filter);
+    });
+  });
+
+  // Run animation on scroll
+  window.addEventListener("scroll", animateOnScroll);
+
+  // Initial animation
+  animateOnScroll();
+}
+
+// Call after DOM is loaded
+document.addEventListener("DOMContentLoaded", function () {
+  setupTimeline();
+});
